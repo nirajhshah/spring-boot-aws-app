@@ -27,7 +27,10 @@ public class Service {
 			String phoneNumber, Map<String, MessageAttributeValue> smsAttributes) 
 	{
 		System.out.println(" sendSMSMessage");
-	        PublishResult result = snsClient.publish(new PublishRequest()
+
+	    PublishRequest request = new  PublishRequest();
+	    request.putCustomRequestHeader("Access-Control-Allow-Origin", "*");
+		PublishResult result = snsClient.publish(request
 	                        .withMessage(message)
 	                        .withPhoneNumber(phoneNumber)
 	                        .withMessageAttributes(smsAttributes));

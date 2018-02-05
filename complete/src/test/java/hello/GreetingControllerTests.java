@@ -62,7 +62,7 @@ public class GreetingControllerTests {
     	Mockito.mock(Service.class);
     	this.mockMvc.perform(post("/greeting")
     			 .contentType(MediaType.APPLICATION_JSON)
-    		       .content(asJsonString(new Greeting(123,"",null)))
+    		       .content(asJsonString(new Greeting(123,"")))
     		       .accept(MediaType.APPLICATION_JSON))
     		       .andExpect(status().isOk());
     }
@@ -72,7 +72,7 @@ public class GreetingControllerTests {
     public void paramGreetingShouldReturnTailoredMessage() throws Exception {
 
         this.mockMvc.perform(post("/greeting"). contentType(MediaType.APPLICATION_JSON_UTF8)
- 		       .content(asJsonString(new Greeting(123,"niraj",null)))
+ 		       .content(asJsonString(new Greeting(123,"niraj")))
  		       .accept(MediaType.APPLICATION_JSON))
 		        .andExpect(status().isOk())
 		        .andExpect(jsonPath("phoneNumber", is(123)))

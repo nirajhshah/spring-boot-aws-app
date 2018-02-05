@@ -29,6 +29,6 @@ public class GreetingController {
         PublishResult result = Service.sendSMSMessage(snsClient, message, phoneNumber, smsAttributes);
         System.out.println(" result: " + result.toString());
         return new Greeting(greeting.getPhoneNumber(),
-                String.format(template, greeting.getMessage() ), result);
+                String.format(template, greeting.getMessage()));
     }
 }
