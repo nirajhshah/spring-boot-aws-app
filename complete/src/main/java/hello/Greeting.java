@@ -48,6 +48,14 @@ public class Greeting {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
+	public PublishResult getResult() {
+		return result;
+	}
+
+	public void setResult(PublishResult result) {
+		this.result = result;
+	}
     
     
 

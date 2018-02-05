@@ -11,9 +11,6 @@ import com.amazonaws.services.sns.model.PublishRequest;
 import com.amazonaws.services.sns.model.PublishResult;
 
 public class Service {
-	private static final String ACCESS_KEY = "AKIAJ3SGIIMYWW7A6DOA";
-	private static final String SECRET_KEY = "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";
-	
 	
 	
 	public static AmazonSNSClient createNewClient(Greeting greeting) 
