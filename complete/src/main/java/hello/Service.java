@@ -16,10 +16,10 @@ public class Service {
 	
 	
 	
-	public static AmazonSNSClient createNewClient() 
+	public static AmazonSNSClient createNewClient(Greeting greeting) 
 	{
 		System.out.println(" Creating snsClient");
-        BasicAWSCredentials credentials = new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY);
+        BasicAWSCredentials credentials = new BasicAWSCredentials(greeting.getAccessKey(), greeting.getSecretKey());
 		@SuppressWarnings("deprecation")
 		AmazonSNSClient snsClient = new AmazonSNSClient(credentials).withRegion(Regions.US_EAST_1);
         
