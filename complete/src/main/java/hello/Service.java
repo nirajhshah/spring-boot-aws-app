@@ -11,8 +11,6 @@ import com.amazonaws.services.sns.model.PublishRequest;
 import com.amazonaws.services.sns.model.PublishResult;
 
 public class Service {
-	private static final String ACCESS_KEY = "AKIAJ3E4RKWINP7IEOSQ";
-	private static final String SECRET_KEY = "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";
 	
 	
 	
@@ -22,6 +20,7 @@ public class Service {
         BasicAWSCredentials credentials = new BasicAWSCredentials(greeting.getAccessKey(), greeting.getSecretKey());
 		@SuppressWarnings("deprecation")
 		AmazonSNSClient snsClient = new AmazonSNSClient(credentials).withRegion(Regions.US_EAST_1);
+
         
         return snsClient;
 	}
@@ -30,7 +29,10 @@ public class Service {
 			String phoneNumber, Map<String, MessageAttributeValue> smsAttributes) 
 	{
 		System.out.println(" sendSMSMessage");
-	        PublishResult result = snsClient.publish(new PublishRequest()
+
+	    PublishRequest request = new  PublishRequest();
+	    request.putCustomRequestHeader("Access-Control-Allow-Origin", "*");
+		PublishResult result = snsClient.publish(request
 	                        .withMessage(message)
 	                        .withPhoneNumber(phoneNumber)
 	                        .withMessageAttributes(smsAttributes));
