@@ -22,7 +22,7 @@ public class GreetingController {
         String message = greeting.getMessage();
         String phoneNumber =  "+1" + greeting.getPhoneNumber();
         
-        AmazonSNSClient snsClient = Service.createNewClient();
+        AmazonSNSClient snsClient = Service.createNewClient(greeting);
         System.out.println(" client built");
         Map<String, MessageAttributeValue> smsAttributes = Service.createSmsAttributes();
         System.out.println(" attributes built");
