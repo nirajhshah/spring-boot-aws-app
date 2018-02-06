@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 C:\springbootaws\spring-boot-aws-app\complete\src\main\java\hello\Application.java
 C:\springbootaws\spring-boot-aws-app\complete\src\main\java\hello\RestConfig.java
 C:\springbootaws\spring-boot-aws-app\complete\src\main\java\hello\Service.java
 C:\springbootaws\spring-boot-aws-app\complete\src\main\java\hello\Greeting.java
 C:\springbootaws\spring-boot-aws-app\complete\src\main\java\hello\GreetingController.java
+=======
+C:\codebase\AWSNotification\AWSNotificationAPI\complete\src\main\java\hello\RestConfig.java
+C:\codebase\AWSNotification\AWSNotificationAPI\complete\src\main\java\hello\Service.java
+C:\codebase\AWSNotification\AWSNotificationAPI\complete\src\main\java\hello\Greeting.java
+C:\codebase\AWSNotification\AWSNotificationAPI\complete\src\main\java\hello\GreetingController.java
+C:\codebase\AWSNotification\AWSNotificationAPI\complete\src\main\java\hello\Application.java
+>>>>>>> 5654ccfd458ab12b7b0a0ae8373778ca1c171ce7

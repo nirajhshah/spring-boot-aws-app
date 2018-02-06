@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: hello.GreetingControllerTests
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.161 sec - in hello.GreetingControllerTests
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.058 sec - in hello.GreetingControllerTests
+>>>>>>> 5654ccfd458ab12b7b0a0ae8373778ca1c171ce7
