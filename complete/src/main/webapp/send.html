@@ -33,7 +33,7 @@
                     if ($scope.form.id == -1) {
                         //Id is absent so add employee - POST operation
                         method = "POST";
-                        url = 'springbootawssns/greeting';
+                        url = 'http://gs-aws-spring-boot-sn-test.us-east-2.elasticbeanstalk.com/springbootawssns/greeting';
                     } else {
                         //If Id is present, it's edit operation - PUT operation
                         method = "PUT";
