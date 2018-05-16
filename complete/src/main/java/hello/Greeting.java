@@ -3,6 +3,7 @@ package hello;
 public class Greeting {
 
     private long phoneNumber;
+    private String userId;
     private String message;
 	private String accessKey;
     private String secretKey;
@@ -39,6 +40,12 @@ public class Greeting {
 	}
 	public void setMessage(String message) {
 		this.message = message;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
     
     
